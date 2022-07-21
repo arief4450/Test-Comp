@@ -1,8 +1,12 @@
 [
 null,
-{"id":1,"expanded":true,"name":"Testbed","order":2,"parentId":2,"scrollX":982.8,"scrollY":553.1999999999999},
+{"id":1,"expanded":true,"name":"Testbed","order":2,"parentId":2,"scrollX":1638,"scrollY":922},
 {"id":2,"expanded":true,"name":"Start","order":1,"parentId":0,"scrollX":1638,"scrollY":922},
-{"id":3,"expanded":false,"name":"Level 1","order":4,"parentId":4,"scrollX":1622,"scrollY":998},
+{"id":3,"expanded":false,"name":"Level 1","order":4,"parentId":4,"scrollX":1622,"scrollY":922},
 {"id":4,"expanded":true,"name":"Levels","order":3,"parentId":0,"scrollX":1638,"scrollY":922},
-{"id":5,"expanded":false,"name":"Cutscenes","order":5,"parentId":0,"scrollX":982.8,"scrollY":553.1999999999999}
+{"id":5,"expanded":true,"name":"Cutscenes","order":7,"parentId":0,"scrollX":982.8,"scrollY":553.1999999999999},
+{"id":6,"expanded":false,"name":"Level 2","order":5,"parentId":4,"scrollX":0,"scrollY":0},
+{"id":7,"expanded":false,"name":"Level 3","order":6,"parentId":4,"scrollX":0,"scrollY":0},
+{"id":8,"expanded":false,"name":"the lady's wish","order":8,"parentId":5,"scrollX":0,"scrollY":0},
+{"id":9,"expanded":false,"name":"Realm of Slumber","order":9,"parentId":0,"scrollX":1638,"scrollY":922}
 ]
