@@ -12,7 +12,7 @@
  * @param Animation Mode
  * @desc Definição do tipo de animação.
  * 0 - None     1 - Pulse    2 - Shake
- * @default 2
+ * @default 1
  * @type select
  * @option None
  * @value 0
@@ -55,7 +55,7 @@
  * @param Smart Background
  * @text Visible
  * @desc Ativar a imagem de fundo baseado na seleção de comando.
- * @default true
+ * @default false
  * @type boolean
  * @parent -> Smart Background  <<<<<<<<<<<<<<<<<<<<<<<
  * 
@@ -89,7 +89,7 @@
  * @text Visible
  * @desc Ativar o nome do título em sprite.
  * É necessário ter o arquivo Title.png na pasta img/titles2/
- * @default true
+ * @default false
  * @type boolean
  * @parent -> Title Sprite <<<<<<<<<<<<<<<<<<<<<<<
  * 
@@ -143,7 +143,7 @@
  * @param Cursor Visible
  * @text Visible
  * @desc Ativar cursor.
- * @default true
+ * @default false
  * @type boolean
  * @parent -> Cursor <<<<<<<<<<<<<<<<<<<<<<<
  *
@@ -157,7 +157,7 @@
  * @param Cursor Rotation Animation
  * @text Rotation Animation
  * @desc Ativar animação de rotação.
- * @default true
+ * @default false
  * @type boolean
  * @parent -> Cursor <<<<<<<<<<<<<<<<<<<<<<<
  *
@@ -175,31 +175,31 @@
  * @param Command Pos 1
  * @desc Definição da posição do comando 1.
  * E.g -     32,32
- * @default 650,460
+ * @default 900,200
  * @parent -> Commands <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Command Pos 2
  * @desc Definição da posição do comando 2.
  * E.g -     32,32
- * @default 660,490
+ * @default 900,280
  * @parent -> Commands <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Command Pos 3
  * @desc Definição da posição do comando 3.
  * E.g -     32,32
- * @default 665,520
+ * @default 900,360
  * @parent -> Commands <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Command Pos 4
  * @desc Definição da posição do comando 4.
  * E.g -     32,32
- * @default 670,550
+ * @default 900,440
  * @parent -> Commands <<<<<<<<<<<<<<<<<<<<<<<
  *
  * @param Command Pos 5
  * @desc Definição da posição do comando 5.
  * E.g -     32,32
- * @default 345,498
+ * @default 900,520
  * @parent -> Commands <<<<<<<<<<<<<<<<<<<<<<< 
  *
  * @param Command Pos 6
@@ -290,7 +290,7 @@
 	Moghunter.title_com_pos = [];
 	for (var i = 0; i < 10; i++) {
 		Moghunter.title_com_pos[i] = (Moghunter.parameters['Command Pos ' + String(i + 1)] || null);
-	};	
+	};
 	
 //=============================================================================
 // ** Window_TitleCommand
@@ -462,7 +462,7 @@ Scene_Title.prototype.createPictureCommands = function() {
 	for (var i = 0; i < 10; i++) {
 	    this._com_position[i] = this.set_tcp(Moghunter.title_com_pos[i]);
     };	
-	var _com_index_old = -2;
+	var _com_index_old = 0;
 	if (this._subPic) {this.createSubPicture()};
 	this._csel = false;
 	this._com_int = true;

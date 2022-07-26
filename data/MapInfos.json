@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":true,"name":"Testbed","order":2,"parentId":2,"scrollX":982.8,"scrollY":553.1999999999999},
-{"id":2,"expanded":true,"name":"Start","order":1,"parentId":0,"scrollX":1638,"scrollY":922},
+{"id":2,"expanded":true,"name":"Start","order":1,"parentId":0,"scrollX":650.4,"scrollY":366},
 {"id":3,"expanded":false,"name":"Moar Testbed","order":3,"parentId":2,"scrollX":1638,"scrollY":922},
 {"id":4,"expanded":true,"name":"Levels","order":4,"parentId":0,"scrollX":982.8,"scrollY":553.1999999999999},
 {"id":5,"expanded":true,"name":"Cutscenes","order":8,"parentId":0,"scrollX":1638,"scrollY":922},
